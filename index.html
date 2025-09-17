@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+  <meta name="description" property="og:description"
+  content="">
+
+  <title>Univesp | Possibilidades Dos Usos Acadêmicos Para a IA</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css"> 
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/media-mobile.css">
+  <link rel="stylesheet" href="stylesheets/media-small.css">
+  <link rel="stylesheet" href="stylesheets/media-tablet.css">
+
+  <!-- JS -->
+  <script src="javascripts/script.js"></script>
+  <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">William Kimura</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">23300.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Celso Roberto Lourenco</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100A38F8AD45AFCC2449EE864BD78216A31</mso:ContentTypeId>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav class="header-dinamico">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-positiva.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+      <div class="title-card small-hide mobile-hide">
+        <!--<img src="assets/titulo.jpg" alt="Imagem título" class="mobile-hide">-->
+        <!--<img src="assets/título-mobile.jpg" alt="Imagem título" class="desktop-hide tablet-hide small-hide">-->
+      </div>
+      <div class="title-card-mobile desktop-hide tablet-hide">
+        <!--<img src="assets/titulo.jpg" alt="Imagem título" class="mobile-hide">-->
+        <!--<img src="assets/título-mobile.jpg" alt="Imagem título" class="desktop-hide tablet-hide small-hide">-->
+      </div>
+
+      <div class="banner banner-titulo-parte-1">
+        <img src="assets/banner-titulo-parte-1.jpg" alt="Banner">
+      </div>
+
+
+      <div class="menu-ilustrado-main-container">
+        <h5>Navegue pelas seções:</h5>
+      <div class="menu-ilustrado-container">
+        <a href="#apresentacao" class="menu-box">
+          <div class="container-icone"><img class="imagem-apresentacao" src="assets/menu-icones/apresentacao.png"></div>
+          <div class="container-texto"><h5 class="apresentacao-texto">Apresentação e contextualização da IA generativa</h5></div>
+        </a>
+        <a href="#produtos" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/produtos.png"></div>
+          <div class="container-texto"><h5>Alguns produtos que utilizam IA gen</h5></div>
+        </a>
+        <a href="#matematica" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/matematica.png"></div>
+          <div class="container-texto"><h5>IA em questões matemáticas</h5></div>
+        </a>
+        <a href="#como-utilizar" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/comandos.png"></div>
+          <div class="container-texto"><h5>Como utilizar a IA gen? Pensando em comandos</h5></div>
+        </a>
+        <a a href="#estudos" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/estudos.png"></div>
+          <div class="container-texto"><h5>Como posso usar a IA para meus estudos?</h5></div>
+        </a>
+        <a href="#etica" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/etica.png"></div>
+          <div class="container-texto"><h5>IA: Questão de Ética!</h5></div>
+        </a>
+        <a href="#rotina-univesp" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/rotina.png"></div>
+          <div class="container-texto"><h5>A IA em sua rotina Univesp</h5></div>
+        </a>
+        <a href="#referencias" class="menu-box">
+          <div class="container-icone"><img src="assets/menu-icones/glossario.png"></div>
+          <div class="container-texto"><h5>Referências e Glossário</h5></div>
+        </a>
+      </div>
+    </div>
+
+      <div class="nav-menu-mobile-container">
+        <div class="nome-secao-container">
+          <button class="ham-icon"><img src="assets/icones-diversos/ham.svg"></button>
+          <p></p>
+        </div>
+   
+        <div class="mobile-dropdown-menu hidden">
+          <a href="#apresentacao">Apresentação e contextualização da IA generativa</a>
+          <a href="#produtos">Alguns produtos que utilizam IA gen</a>
+          <a href="#matematica">IA em questões matemáticas </a>
+          <a href="#como-utilizar">Como utilizar a IA gen? Pensando em comandos.</a>
+          <a href="#estudos">Como posso usar a IA para meus estudos?</a>
+          <a href="#etica">IA: Questão de Ética!</a>
+          <a href="#rotina-univesp">A IA em sua rotina Univesp.</a>
+        </div>
+      </div>
+   
+
+
+
+<!-- Parte 1 -->  
+      <section id="apresentacao">
+      <div class="parte-1-apresentacao">
+        <div class="main-container">
+          <div class="titulo-parte-1" id="titulo"><div class="vertical-divider"></div><h2>Apresentação e contextualização da IA generativa</h2></div>
+          <p>Antes de explorar a IA gen como ferramenta, é importante entender a lógica geral de seu funcionamento, que é <span class="bold">diferente das ferramentas de busca que estávamos acostumados a usar.</span></p>
+          <p>As ferramentas de busca que temos por aí exploram o conteúdo da internet através de <span class="bold highlight-lilas"> mecanismos de rastreio, indexação e ranqueamento.</span> Quando digitamos um termo ou fazemos uma pergunta, elas nos retornam endereços nos quais o termo aparece ou a pergunta pode ter sido respondida. Note que a busca retorna informações já disponíveis na internet, isto é, nenhum conteúdo está sendo “criado”.</p>
+          <img class="desktop-hide  prompt-sintese" src="assets/parte-1-apresentacao/prompt-sintese.png">
+          <div class="sub-container-1">
+            <p>Assim como as ferramentas de busca, a IA gen possui um banco de dados no qual realiza buscas – este banco pode ser privado, contendo conteúdo selecionado, ou público, envolvendo toda a web. A grande premissa da IA gen é <span class="bold">gerar uma resposta com base naquilo que “aprendeu” com o banco a partir de um comando (prompt) dado pelo usuário.</span></p>
+            <img class="mobile-hide small-hide tablet-hide" src="assets/parte-1-apresentacao/prompt-sintese.png">
+
+          </div>
+          <div class="dessa-forma">
+            <p>Dessa forma, ao invés de retornar uma série de referências, como nas buscas convencionais, a resposta gerada promete ser uma <span class="bold">síntese adequada e direta para o comando.</span> Na prática, quanto mais refinado for esse comando, mais refinada será a resposta dada pela IA.</p>
+          </div>  
+          <img class="divisao-rede" src="assets/icones-diversos/divisao-rede.png">
+          <div class="sub-container-2">
+            <img id="icone-cabeca" src="assets/parte-1-apresentacao/learning.svg">
+            <h5 id="subtitulo">Mas como que uma IA “aprende”?</h5>
+          </div>
+          <p>Ela é treinada para localizar padrões, usando algoritmos de aprendizado de máquina. Estes, analisam palavras, suas conexões e relações para entender padrões e utilizá-los na produção de conteúdo. Aqui, vale a lembrança que a qualidade dos conteúdos depende muito dos bancos de dados utilizados no treinamento da IA. Problemas neste processo podem gerar <span class="bold">vieses indesejáveis,</span> como <span class="bold">a replicação de erros ou preconceitos, no conteúdo.</span></p>
+          <p>Também não é comum que as ferramentas de IA apresentem suas referências, dificultando o rastreio de fontes de informação ou a auditoria do banco usado para o treinamento. Além disso, nem sempre os algoritmos fazem associações corretas, produzindo um conteúdo que pode nos induzir ao <span class="bold">erro.</span></p>
+          <div class="sub-container-3  small-hide mobile-hide">
+              <p>Assim, é altamente recomendável a <span class="bold">realização de uma revisão e uma pesquisa suplementar em outras fontes</span> para conferir aquilo que a IA propôs.</p>
+              <img class="pesquisa-icone" src="assets/parte-1-apresentacao/pesquisa-icone.png">
+          </div>
+          <div class="sub-container-3-small-mobile  desktop-hide tablet-hide">
+            <img class="pesquisa-icone " src="assets/parte-1-apresentacao/pesquisa-icone.png">
+
+            <p>Assim, é altamente recomendável a <span class="bold">realização de uma revisão e uma pesquisa suplementar em outras fontes</span> para conferir aquilo que a IA propôs.</p>
+        </div>
+          <p class="ia-gen-veio">A IA gen é uma novidade que veio para ficar. Portanto, <span class="bold">entender os potenciais, os limites e os usos éticos dessa tecnologia na vida acadêmica e profissional é <span class="highlight-lilas">essencial.</span></span></p>
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-lilas.png">
+        </div>
+
+        <div class="saiba-mais-container">
+          <button class="saiba-mais-botao"><img src="assets/icones-diversos/seta-preta-baixo.svg" ><p>SAIBA MAIS!</p></button>
+          <div class="saiba-mais-sub-container hide-saiba-mais">
+ 
+            <div class="link">
+                <p class="bold">Como funcionam as páginas de busca?</p>
+                <a class="mobile-hide" href="https://developers.google.com/search/docs/fundamentals/how-search-works?hl=pt-br">https://developers.google.com/search/docs/fundamentals/how-search-works?hl=pt-br</a>
+                <a class="desktop-hide small-hide tablet-hide" href="https://developers.google.com/search/docs/fundamentals/how-search-works?hl=pt-br">https://developers.google.com/</a>
+                <p class="italic">Acesso em: 31 out. 24</p>
+              </div>
+             
+              <div class="link">
+                <p class="bold">Grandes Modelos de Linguagem, em 12 pontos</p>
+                <a href="https://pp.nexojornal.com.br/perguntas-que-a-ciencia-ja-respondeu/2024/06/28/grandes-modelos-de-linguagem-em-12-pontos">https://pp.nexojornal.com.br/perguntas-que-a-ciencia-ja-respondeu/2024/06/28/grandes-modelos-de-linguagem-em-12-pontos</a>
+                <p class="italic">Acesso em: 06 nov. 24</p>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div id="banner-container">
+    <div class="banner banner-parte-1-parte-2">
+      <img src="assets/banner-parte-1-parte-2.jpg" alt="Banner">
+    </div>
+    <div id="triangle" class="triangle-parte-1-2"></div>
+  </div>
+
+ 
+
+<!-- Parte 2 -->  
+    <section id="produtos">
+      <div class="parte-2-produtos">
+        <div class="main-container">
+          <div class="titulo-parte-2" id="titulo"><div class="vertical-divider"></div><h2>Alguns produtos que utilizam IA gen</h2></div>
+          <p>Existem IAs gen variadas, trabalhando com conteúdo de texto, vídeos, música etc. Aqui, priorizamos algumas IAs gen de <span class="bold highlight-azul">uso acadêmico</span> mais imediato e com <span class="bold highlight-azul">versões gratuitas.</span></p>
+          <p>Ferramentas como <span class="bold italic">ChatGPT, Gemini</span> e <span class="bold italic">Microsoft Copilot</span> trabalham de forma bastante similar, usando uma lógica de chat para gerar conteúdo. Cada uma delas têm pontos fortes e fracos a serem avaliados e a melhor maneira de escolher a sua “favorita” é testá-las em diferentes funcionalidades e avaliar qual se adapta melhor aos seus fins - seja pesquisar informações pontuais, pedir o desenvolvimento de conceitos, referências bibliográficas, auxílio na elaboração de códigos, revisão de textos, etc.</p>
+          <div class="logos-container">
+            <img class="mobile-hide small-hide logo-icone" src="assets/parte-2-produtos/notebook-logo-mobile.png"><img class="logo-icone" src="assets/parte-2-produtos/gemini-logo.png"><img class="logo-icone" src="assets/parte-2-produtos/copilot-logo.png"><img class="tablet-hide desktop-hide mobile-hide" src="assets/parte-2-produtos/notebook-logo-mobile.png"><img class="logo-icone" src="assets/parte-2-produtos/chatgpt-logo.png"><img class="tablet-hide desktop-hide small-hide" src="assets/parte-2-produtos/notebook-logo-mobile.png">
+          </div>
+          <div class="sub-container-1">
+            <img class="mobile-hide" src="assets/parte-2-produtos/seta-1.png">
+            <img class="desktop-hide tablet-hide small-hide" src="assets/parte-2-produtos/seta-1-mobile.png">
+            <p>A <span class="bold italic">Notebook LM</span> da Google é outro produto interessante que deve ser considerado. O usuário consegue alimentá-lo com <span class="bold">suas próprias fontes,</span> permitindo uma interação mais focada nos materiais em que está trabalhando. Nele, é possível organizar blocos de notas interativos e baseados principalmente nos materiais em mãos.</p>
+            <img class="mobile-hide" src="assets/parte-2-produtos/linhas.png">
+          </div>
+          <div class="ha-varias">
+            <p>Há várias IAs gen disponíveis e tantas outras em desenvolvimento, <span class="bold">sendo incerto saber quais terão alguma utilidade a longo prazo no nosso dia a dia.</span></p>
+          </div>  
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-azul.png">
+        </div>
+        <div class="saiba-mais-container">
+          <button class="saiba-mais-botao"><img src="assets/icones-diversos/seta-preta-baixo.svg" ><p>SAIBA MAIS!</p></button>
+          <div class="saiba-mais-sub-container hide-saiba-mais">
+            <p class="bold explore">Explore os produtos discutidos:</p>
+                <div><p class="bold">ChatGPT <span class="mobile-hide">-</span>&nbsp;</p><a href="https://chatgpt.com/auth/login"> https://chatgpt.com/auth/login</a></div>
+                <div><p class="bold">Gemini <span class="mobile-hide">-</span>&nbsp;</p><a href="https://gemini.google.com/app?hl=pt-BR"> https://gemini.google.com/app?hl=pt-BR</a></div>
+                <div><p class="bold">Copilot <span class="mobile-hide">-</span>&nbsp;</p><a href="https://copilot.microsoft.com/"> https://copilot.microsoft.com/</a></div>
+                <div><p class="bold">Google Notebook <span class="mobile-hide">-</span>&nbsp;</p><a href="https://notebooklm.google/"> https://notebooklm.google/</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="banner-container">
+      <div class="banner banner-parte-2-parte-3">
+        <img src="assets/banner-parte-2-parte-3.jpg" alt="Banner">
+      </div>
+      <div id="triangle" class="triangle-parte-2-3"></div>
+    </div>
+
+    <!-- Parte 3 -->  
+    <section id="matematica">
+      <div class="parte-3-matematica">
+        <div class="main-container">
+          <div class="titulo-parte-3" id="titulo"><div class="vertical-divider"></div><h2>IA em questões matemáticas</h2></div>
+          <p>O desenvolvimento de muitas IAs gen (como ChatGPT, Copilot e Gemini) é focado na atuação como um grande modelo de linguagem, de modo que a <span class="bold">interpretação de problemas matemáticos avançados <span class="highlight-laranja">ainda precisa ser aprimorada.</span></span> A utilização de banco de dados compostos massivamente por textos focados na conversação limita a realização de operações e cálculos matemáticos.</p>
+        </div>
+        <div class="ilustra-matematica-container desktop-hide tablet-hide">
+          <img class="ilustra-matematica " src="assets/parte-3-matematica/arte-1.png">
+        </div>
+        <div class="sub-container-1">
+          <div class="sub-esquerda">
+            <p>Ainda assim, as IAs têm capacidade de adquirir alguma habilidade lógico-matemática através de textos sistemicamente disponíveis no banco de dados, <span class="bold">permitindo a solução de alguns problemas simples.</span></p>
+            <div class="porem">
+              <div class="atencao-container"><img src="assets/parte-3-matematica/atencao-1.png"></div>
+              <p>Porém, por vezes, ao invés de retornar um erro, por exemplo, as IAs são desenhadas para entregar uma solução (mesmo que "inventada") que soe plausível, mas que pode <span class="bold">ser inconsistente e pouco confiável.</span></p>
+            </div>
+          </div>
+          <div class="image-container small-hide mobile-hide"><img src="assets/parte-3-matematica/arte-1.png"> </div>
+        </div>
+        <div class="sub-container-2">
+          <p>Há ferramentas disponíveis que são capazes de lidar melhor com questões matemáticas, como o <span class="bold italic">Photomath,</span> o <span class="bold italic">MathGPT</span> e o <span class="bold italic">Wolfram Alpha.</span> Todas utilizam algoritmos de IA em algum momento, porém o aspecto generativo das respostas obtidas varia de um serviço para outro.</p>
+        </div>
+
+        <div class="icone-cerebro mobile-hide">
+          <img src="assets/parte-3-matematica/icone-cerebro.png">
+        </div>
+        <div class="icone-cerebro desktop-hide small-hide tablet-hide">
+          <img src="assets/parte-3-matematica/icone-cerebro-mobile.png">
+        </div>
+        <div class="sub-container-3">
+          <div class="matematica-gen-container">
+            <img src="assets/parte-3-matematica/photomath.png">
+            <p>O <span class="bold italic">Photomath</span> é focado na explicação das etapas matemáticas envolvidas em uma situação-problema e permite utilizar <span class="bold">fotografias e imagens escaneadas</span> como comando de entrada.</p>
+          </div>
+          <div class="matematica-gen-container">
+            <img src="assets/parte-3-matematica/mathgpt.png">
+            <p>O <span class="bold italic">MathGPT</span> é uma ferramenta de IA desenvolvida especificamente para <span class="bold">solução de problemas matemáticos e assistência conceitual.</span></p>
+          </div>
+          <div class="matematica-gen-container">
+            <img src="assets/parte-3-matematica/wolfram-logo.png">
+            <p>O <span class="bold italic">Wolfram Alpha</span> responde às perguntas diretamente, mediante o processamento da resposta extraída de base de dados estruturados e sua versão gratuita não apresenta explicações detalhadas. Ainda, um plugin do Wolfram <span class="bold">pode ser utilizado em conjunto com o ChatGPT,</span> permitindo a integração dos recursos.</p>
+          </div>
+        </div>
+        <img class="divisao-rede" src="assets/icones-diversos/divisao-rede.png">
+        <div class="main-container-2">
+          <div class="sub-container-4">
+            <img id="icone-cabeca" src="assets/parte-3-matematica/icone-cabeca.png">
+            <h5 id="subtitulo">É importante entender como escrever o comando de entrada.</h5>
+          </div>
+          <p>Por exemplo, o <span class="italic">Wolfram Alpha</span> <span class="bold">não é capaz de entender totalmente comandos em português,</span> nesse caso é melhor utilizar comandos em inglês. Tente descrever todas as informações necessárias para obter a resposta desejada.</p>
+          <p>Por exemplo, se queremos encontrar os valores para os quais a função f(x)=x²-2x+1 é maior do que 1, pesquisar <span class="italic">“x²-2x+1”</span> não retornará o resultado desejado (apesar de apresentar outras informações), mas pesquisar <span class="italic">“x²-2x+1 &gt 1”</span> ou <span class="italic">“find x²-2x+1 greater than 1”</span> resultará na resposta desejada. Para este exemplo a resposta seria x &gt 2 ou x &lt 0. </p>
+          <p class="bold">Comandos elaborados como “f(x)=x²-2x+1 where f(x)&gt1” <highlight class="highlight-laranja">podem produzir respostas indesejadas,</highlight> uma vez que não é possível interpretar adequadamente o comando.</p>
+      </div>
+      <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-laranja.png">
+      
+      <div class="container-imagens-1">
+       
+        <div class="legenda-comandos"><img src="assets/parte-4-como-utilizar/icone-prompt-claro.png"><p>O Wolfram pode, ainda, fornecer detalhes gerais, mas <span class="bold">não necessariamente a resposta para uma determinada situação.</span></p></div>
+
+        <img class="print" src="assets/parte-3-matematica/pic-1.png">
+        <img class="print" src="assets/parte-3-matematica/pic-2.png">
+        <img class="print" src="assets/parte-3-matematica/pic-3.png">
+      </div>
+      <div class="container-imagens-2">
+        <img src="assets/parte-3-matematica/cog 5.png" class="cog">
+
+        <div class="legenda-comandos"><img src="assets/parte-4-como-utilizar/icone-prompt-escuro.png"><p>Comandos adequados geram<span class="bold"> respostas adequadas.</span></p></div>
+  
+        <img class="print" src="assets/parte-3-matematica/pic-4.png">
+
+      </div>
+      <div class="container-imagens-3">
+        <img src="assets/parte-3-matematica/cog 5.png" class="cog2">
+
+        <div class="legenda-comandos"><img src="assets/parte-4-como-utilizar/icone-prompt-claro.png"> <p><span class="bold">Importante ter em mente que problemas de interpretação</span> podem comprometer o entendimento do que deve ser respondido.</span></p></div>
+
+        <img class="print" src="assets/parte-3-matematica/pic-5.png">
+      </div>
+        <div class="container-final">
+          <div class="sub-container-5">
+            <img id="icone-cabeca" src="assets/parte-3-matematica/icone-cabeca-2.png">
+            <h5 id="subtitulo">O que fazer quando a resolução está correta, mas não há resposta correta?</h5>
+          </div>
+          <p>Mesmo acertando a resolução de um problema, ao se deparar com uma questão objetiva a IA gen <span class="bold">tende a assinalar uma alternativa correta,</span> mesmo que todas estejam incorretas devido a um erro na formulação da questão, por exemplo. Isso demonstra a <span class="bold">falta de capacidade interpretativa da IA,</span> pois mesmo desenvolvendo o raciocínio correto não é capaz de perceber que nenhuma das alternativas é igual à resposta obtida.</p>
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-creme.png">
+        </div>
+      </div>
+      <div class="saiba-mais-container">
+        <button class="saiba-mais-botao saiba-mais-matematica"><img src="assets/icones-diversos/seta-preta-baixo.svg" ><p>SAIBA MAIS!</p></button>
+        <div class="saiba-mais-sub-container saiba-mais-matematica hide-saiba-mais">
+          <p class="bold explore">Explore os produtos discutidos:</p>
+              <div><p class="bold">Photomath <span class="mobile-hide">-</span>&nbsp;</p><a href="https://photomath.com/"> https://photomath.com/</a></div>
+              <div><p class="bold">MathGPT <span class="mobile-hide">-</span>&nbsp;</p><a href="https://gemini.google.com/app?hl=pt-BR"> https://math-gpt.org/</a></div>
+              <div><p class="bold">Wolfram Alpha <span class="mobile-hide">-</span>&nbsp;</p><a href="https://copilot.microsoft.com/"> https://www.wolframalpha.com/</a></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="banner-container">
+      <div class="banner banner-parte-3-parte-4">
+        <img src="assets/banner-parte-3-parte-4.jpg" alt="Banner">
+      </div>
+      <div id="triangle" class="triangle-parte-3-4"></div>
+    </div>
+
+
+
+
+
+    <!-- Parte 4 -->  
+    <section id="como-utilizar">
+      <div class="parte-4-como-utilizar">
+        <div class="main-container">
+          <div class="titulo-parte-4" id="titulo"><div class="vertical-divider"></div><h2>Como utilizar a IA gen? Pensando em comandos.</h2></div>
+          <img src="assets/parte-4-como-utilizar/arte-1.jpg" class="arte-1">
+          <p>As instruções que você passa para uma IA gen são chamadas de <span class="bold highlight-lilas">comandos ou prompts.</span> Quanto melhor elas forem elaboradas, mais interessante e adequada será a resposta dada pela IA.</p>
+          <p>          Quando realizar uma solicitação à IA os comandos fornecidos devem ser <span class="bold">suficientemente claros e direcionados a resposta que deseja obter.</span> Uma dica para sua redação é elaborá-las como se você estivesse contando uma história inédita para outra pessoa. Informações como “o quê”, “quem”, “quando”, “onde”, “como” e “por quê” são essenciais para compor o contexto da história e facilitar a compreensão do ouvinte. </p>
+          <p class="com-a-ia-box">Com a IA gen, <span class="bold">quanto mais informações contextuais o usuário fornecer, mais específica será a sua resposta.</span></p>
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-azul.png">
+          <p class="veja-o-exemplo">Veja o exemplo usando uma questão do <span class="bold">ENEM 2024 Questão ENEM 2024 - 1º Dia:</span></p>
+      </div>
+
+      <div class="main-container-2">
+        <div class="box-enem">
+          <p>Uma das principais atividades provocadas pela arte, a reflexão, é abandonada pela indústria cultural. A indústria cultural seria como uma isca que ilude os indivíduos, com o sonho de que eles são livres, originais, únicos e especiais quando, na verdade, os trata como servos e partes de uma massa homogênea. <span class="italic">FONTES, B.; MAGALHÃES, R. O que é indústria cultural? In: BODART, C. N. (Org.). Conceitos e categorias do ensino de sociologia. Maceió: Café com Sociologia, 2021 (adaptado).</span></p>
+          <p>Ao analisar as consequências da dinâmica apresentada no texto, as autoras destacam a importância do conceito como:</p>
+          <ul>
+            <li><span class="bold">A)</span> Ferramenta de luta coletiva</li>
+            <li><span class="bold">B)</span> Mecanismo de controle social.</li>
+            <li><span class="bold">C)</span> Instituição de interesse público.</li>
+            <li><span class="bold">D)</span> Organização da iniciativa privada.</li>
+            <li><span class="bold">E)</span> Instrumento de manipulação estatal.</li>
+          </ul>
+          <div class="triangle-enem"></div>
+        </div>
+        
+        <div class="na-ia">
+          <img src="assets/parte-4-como-utilizar/icone-prompt.png"><h5>Na IA:</h5>
+        </div>
+      <div class="box-resp-enem">
+        <div class="section">
+          <div><p class="azul-claro"><span class="bold">Comando:</span> Resolva a questão do ENEM.</p></div>
+        </div>
+        <div class="section">
+          <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Conteúdo gerado pela IA:</p></div>
+          <p class="typewriter">A questão aborda a crítica à indústria cultural, que, segundo os autores, ilude os indivíduos ao fazê-los acreditar que são livres e únicos, enquanto na verdade os trata como partes de uma massa homogênea.<br>
+            Diante disso, a alternativa que melhor reflete essa crítica é: <br>
+            <span class="bold">B) Mecanismo de controle social.</span>
+            <br><br>
+            A indústria cultural é vista como um meio de controle social, onde os indivíduos são manipulados e conformados a uma cultura de massa, perdendo a capacidade de reflexão crítica e individualidade.</p>
+        </div>
+        <div class="section"><p class="azul-claro"><span class="bold">Comentários sobre o retorno da IA:</span> A resposta dada pela IA está correta. No entanto, suas explicações são superficiais e limitam-se a reciclar trechos dos textos já presentes na própria questão de referência. Assim, a IA atua como um “papagaio” repetindo dados já fornecidos e não abre a possibilidade para a continuidade dos estudos.</p></div>
+      </div>
+
+      <div class="na-ia">
+        <img src="assets/parte-4-como-utilizar/icone-prompt.png"><h5>Na IA (alternativa):</h5>
+      </div>
+
+      <div class="box-resp-enem">
+        <div class="section section-2">
+          <div><p class="azul-claro"><span class="bold">Comando:</span> Eu estou estudando para a prova do ENEM e quero que você faça a análise dessa questão da área de Ciências Humanas e suas Tecnologias. Sua análise deve fornecer a resolução da questão, destacar o principal conceito em discussão, dar exemplo de 1 autor(a) que trata do tema e sugerir dois temas ou conceitos das ciências humanas relacionados ao conceito principal e que seriam úteis para eu conhecer. A resolução deve ser resumida em um parágrafo e os demais itens fornecidos em tópicos curtos.</p></div>
+        </div>
+        <div class="section">
+          <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Conteúdo gerado pela IA:</p></div>
+          <p class="typewriter">
+            <span class="italic">Resolução:</span> A questão critica a indústria cultural por iludir os indivíduos, fazendo-os acreditar que são livres e únicos, enquanto os trata como partes de uma massa homogênea. A alternativa correta é <span class="bold">B) Mecanismo de controle social,</span> pois a indústria cultural é vista como um meio de manipulação e conformação social, limitando a reflexão crítica e a individualidade.
+            <br><br>
+            <span class="bold">- Conceito Principal:</span> Indústria Cultural <br>
+            <span class="bold">- Autor(a) Relevante:</span> Theodor Adorno <br>
+            <br>
+            <span class="bold">- Temas ou Conceitos Relacionados:</span><br>
+            <span class="bold italic">Alienação: </span>Conceito de Karl Marx que descreve a desconexão dos trabalhadores em relação ao produto de seu trabalho e à sociedade. <br>
+            <span class="bold italic">Hegemonia Cultural: </span>Conceito de Antonio Gramsci que explica como a classe dominante mantém o controle ideológico sobre a sociedade. <br>
+            <br>
+            Esses conceitos são úteis para entender como a cultura e a ideologia podem ser usadas para controlar e influenciar a sociedade. Se precisar de mais detalhes ou tiver outras dúvidas, estou aqui para ajudar!
+          </p>
+        </div>
+        <div class="section"><p class="azul-claro"><span class="bold">Comentários sobre o retorno da IA:</span> O texto da resolução manteve-se correto e no padrão de “reciclar” elementos já dados. No entanto, a resposta da IA apresentou <span class="bold">informações úteis</span> para a continuidade de estudos e apontou conceitos e autores que valem a pena serem conhecidos, pois propõem ideias e discussões que complementam o conceito principal. Assim, o estudante não fica limitado a um breve texto de resolução e encontra insights para <span class="bold">pesquisas posteriores.</span></p></div>
+      </div>
+      <div class="sub-container-1">
+        <img src="assets/parte-2-produtos/seta-1.png">
+        <p><span class="bold highlight-lilas">Citações, fatos, dados, palavras-chave e referências</span> são informações úteis para complementar seus comandos e enriquecer sua experiência, aumentando a gama de respostas que podem ser construídas pensando nas suas necessidades.</p>
+      </div>
+    </div>
+
+    <div class="main-container-3">
+      <div class="sub-container-2">
+        <img id="icone-cabeca" src="assets/parte-4-como-utilizar/icone-cabeca-4.png">
+        <h5 id="subtitulo">Vamos entender melhor!</h5>
+      </div>
+      <p>Por exemplo, o comando <span class="italic">“Escreva um texto explicativo de até 1000 caracteres sobre o conceito de Burocracia de Max Weber para que um estudante de Introdução à Sociologia possa estudar para a prova.”</span> produzirá um resultado diferente do que comandos como <span class="italic">“Explique a Burocracia” ou “Escreva um guia de estudos universitários em tópicos, sugerindo leituras sobre o conceito de Burocracia em Max Weber,”</span> ou <span class="italic">“Faça uma apresentação de Power Point sobre Burocracia para um aluno do ensino médio”.</span></p>
+      <p>Uma vez que tenha obtido a resposta desejada é essencial <span class="bold">checar a veracidade e a precisão da informação obtida.</span> Para fazer isso, <span class="bold">revisite suas anotações ou sites sobre os temas abordados,</span> mantendo uma postura crítica com as respostas obtidas. Lembre-se, não tenha medo de contestar a resposta obtida caso perceba alguma inconsistência, afinal de contas a IA não é à prova de falhas.</p>
+    </div>
+    <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-lilas-claro.png">
+    <div class="saiba-mais-container">
+      <button class="saiba-mais-botao"><img src="assets/icones-diversos/seta-preta-baixo.svg"><p>SAIBA MAIS!</p></button>
+      <div class="saiba-mais-sub-container hide-saiba-mais">
+        <p class="bold explore">Conheça mais sobre os comandos:</p>
+            <div><a href="https://aws.amazon.com/what-is/prompt-engineering"> https://aws.amazon.com/what-is/prompt-engineering</a>
+            <p class="italic">Acesso em: 31 out. 24</p>
+          </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <div id="banner-container">
+      <div class="banner banner-parte-4-parte-5">
+        <img src="assets/banner-parte-4-parte-5.jpg" alt="Banner">
+      </div>
+      <div id="triangle" class="triangle-parte-4-5"></div>
+    </div>
+
+    <!-- Parte 5 -->  
+    <section id="estudos">
+      <div class="parte-5-estudos">
+        <div class="main-container">
+          <div class="titulo-parte-5" id="titulo"><div class="vertical-divider"></div><h2>Como posso usar a IA para meus estudos?</h2></div>
+          <p>Neste ponto, devemos ter em mente qual é o objetivo de se utilizar a IA em seu aprendizado e desenvolvimento profissional. A busca por soluções prontas através da IA muitas vezes resulta em <span class="bold">informações questionáveis, inverídicas e errôneas, prejudicando seu desenvolvimento.</span></p>
+          <p>Desafios sempre estiveram presentes nas pesquisas realizadas por estudantes. Até pouco tempo, a biblioteca era o meio mais utilizado para pesquisas e estudos. Nesta linha, as pesquisas em revistas também se popularizaram e, embora sejam publicações com maior edição e contribuição de um grupo de profissionais não estão livre de erros, vieses e informações por vezes duvidosas.</p>
+          <div class="sub-container-1 mobile-hide small-hide">
+            <p>Com o advento da internet e mecanismos de pesquisa, como o Google, <span class="bold">discernir entre o que é informação de qualidade ou não se tornou ainda mais difícil,</span> e o <span class="bold">pensamento crítico</span> tornou-se ainda mais necessário.</p>
+            <img class="fake-news-icone" src="assets/parte-5-estudos/fake-news.png">
+          </div>
+          <div class="sub-container-1-small-mobile  desktop-hide tablet-hide">
+            <img class="fake-news-icone " src="assets/parte-5-estudos/fake-news.png">
+            <p>Com o advento da internet e mecanismos de pesquisa, como o Google, <span class="bold">discernir entre o que é informação de qualidade ou não se tornou ainda mais difícil,</span> e o <span class="bold">pensamento crítico</span> tornou-se ainda mais necessário.</p>
+        </div>
+          <p>Agora, com o uso de tecnologias inteligentes, como IA gen, o desafio se torna ainda maior. Está claro que o aumento do acesso à informação e opções de tecnologia são essenciais, mas novos desafios emergem quanto ao seu uso adequado.</p>
+          <p>O processo de aprendizagem permite não apenas que o aluno absorva o conteúdo ensinado, mas também que desenvolva seu raciocínio crítico e lógico, <span class="bold">sendo capaz de lidar com diferentes cenários em seu cotidiano.</span></p>
+          <img class="divisao-rede" src="assets/icones-diversos/divisao-rede.png">
+          <p class="nesse-sentido">Neste sentido, listamos aqui sugestões adequadas para se utilizar esta <span class="bold">poderosa ferramenta</span> em benefício de seu <span class="bold">desenvolvimento enquanto aluno e futuro profissional:</span></p>
+        </div>
+
+        <div class="main-container-2 mobile-hide small-hide">
+          <div class="sub-container-2-2">
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Resumos e anotações</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Você pode utilizar a IA para realizar <span class="bold">resumos de conteúdos muito extensos</span> para facilitar a definição de trechos importantes destes. Também pode solicitar o destaque de pontos para informações ainda mais concisas. <span class="bold">Sempre se atentando as respostas geradas.</span></p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Esclarecimentos</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Diversas vezes nos deparamos com conceitos <span class="bold">muito difíceis de compreender,</span> ou mesmo com <span class="bold">poucos exemplos.</span> Com as ferramentas de IA você pode realizar perguntas mais específicas e claras para que respostas mais adequadas as suas dúvidas sejam fornecidas. <span class="bold">Quanto maior a precisão das perguntas, mais adequadas serão as respostas.</span></p>
+            </div>
+          </div>
+
+          <div class="sub-container-2-2">
+
+              <img class="img-ciclo" src="assets/parte-5-estudos/chip-ciclo.png">
+
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Pesquisa </h5><img src="assets/icones-diversos/seta-preta-baixo.svg" ></button>
+              <p class="hide-box"><span class="bold">Criação de um projeto de pesquisa:</span> gerando ideias e sugestões para seu projeto, bem como sugestão de fontes de dados; <br>
+                <span class="bold">Coleta de dados:</span> utilizando bases de dados e arquivos, além de tradução de fontes de idiomas diversos;<br>
+                <span class="bold">Análise dos dados coletados:</span> como a decodificação dos dados, sugestão de temas e tópicos relevantes para análises;<br>
+                <span class="bold">Redação:</span> desde a concepção do projeto até a sua finalização, permitindo a melhoria da escrita, formatação de citações e traduções.</p>
+            </div>
+            <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-laranja.png">
+          </div>
+
+          <div class="sub-container-2-2">
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Exercícios e problemas</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A IA pode ser útil para o <span class="bold">esclarecimento de questões e conceitos</span> que ainda esteja com dúvidas e resolver exercícios passo a passo para que consiga apreender corretamente o conteúdo estudado e o <span class="bold">processo de desenvolvimento da resolução de problemas.</span></p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Brainstorming e Suporte</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Ao se deparar com a necessidade de elaborar projetos e trabalhos acadêmicos é possível pedir sugestões de temas, referências relevantes e até orientações sobre a estruturação dos trabalhos. <span class="bold">Sempre tendo em mente seu uso como "gerador de ideias".</span></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="main-container-2-mobile desktop-hide tablet-hide">
+
+            <img class="img-ciclo" src="assets/parte-5-estudos/chip-ciclo.png">
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Resumos e anotações</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Você pode utilizar a IA para realizar <span class="bold">resumos de conteúdos muito extensos</span> para facilitar a definição de trechos importantes destes; ou solicitar o destaque de pontos pra informações ainda mais concisas. <span class="bold">Sempre se atentando as respostas geradas.</span></p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Esclarecimentos</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Diversas vezes nos deparamos com conceitos <span class="bold">muito difíceis de compreender,</span> ou mesmo com <span class="bold">poucos exemplos.</span> Com as ferramentas de IA você pode realizar perguntas mais específicas e claras para que respostas mais adequadas as suas dúvidas sejam fornecidas. <span class="bold">Quanto maior a precisão das perguntas, mais adequadas serão as respostas.</span></p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Pesquisa </h5><img src="assets/icones-diversos/seta-preta-baixo.svg" ></button>
+              <p class="hide-box"><span class="bold">Criação de um projeto de pesquisa:</span> gerando ideias e sugestões para seu projeto, bem como sugestão de fontes de dados. <br>
+                <span class="bold">Coleta de dados:</span> utilizando bases de dados e arquivos, além de tradução de fontes de idiomas diversos.<br>
+                <span class="bold">Análise dos dados coletados:</span> como a decodificação dos dados, sugestão de temas e tópicos relevantes para análises.<br>
+                <span class="bold">Redação:</span> desde a concepção do projeto até a sua finalização, permitindo a melhoria da escrita, formatação de citações e traduções.</p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Exercícios e problemas</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A IA pode ser útil para o <span class="bold">esclarecimento de questões e conceitos</span> que ainda esteja com dúvidas e resolver exercícios passo a passo para que consiga apreender corretamente o conteúdo estudado e o <span class="bold">processo de desenvolvimento da resolução de problemas.</span></p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Brainstorming e Suporte</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Ao se deparar com a necessidade de elaborar projetos e trabalhos acadêmicos é possível pedir sugestões de temas, referências relevantes e até orientações sobre a estruturação dos trabalhos. <span class="bold">Sempre tendo em mente seu uso como "gerador de ideias".</span></p>
+            </div>
+            <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-laranja.png">
+
+
+        </div>
+
+
+      </div>
+      </section>
+
+      <div id="banner-container">
+        <div class="banner banner-parte-5-parte-6">
+          <img src="assets/banner-parte-5-parte-6.jpg" alt="Banner">
+        </div>
+        <div id="triangle" class="triangle-parte-5-6"></div>
+      </div>
+
+          <!-- Parte 6 --> 
+    <section id="etica">
+      <div class="parte-6-etica">
+        <div class="main-container">
+          <div class="titulo-parte-6" id="titulo"><div class="vertical-divider"></div><h2>IA: Questão de Ética!</h2></div>
+          <p>O uso da Inteligência Artificial é globalmente discutido e difundido, uma vez que este apresenta diversas peculiaridades que são novidade em nossa atualidade. O <span class="bold">“não saber usar”</span> essa tecnologia não implica apenas em obter informações incorretas, mas também <span class="bold highlight-lilas">questões mais sensíveis.</span> Assim, listamos relevantes pontos que tornam o "como saber usar” a IA algo tão importante.</p>
+        </div>
+        <img class="divisao-rede" src="assets/icones-diversos/divisao-rede.png">
+        <div class="main-container-2 mobile-hide small-hide">
+          <div class="sub-container">
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Integridade acadêmica</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">O uso de IA tem sido amplamente discutido na comunidade acadêmica, principalmente com relação à <span class="bold">riscos de plágios,</span> como em casos em que é utilizada para geração de trabalhos e respostas de avaliações. Para isso, diversas ferramentas para a detecção do uso da IA vêm sendo utilizadas pelas Instituições de Ensino, chegando ao <span class="bold">banimento de algumas plataformas ao redor do mundo.</span></p>
+            </div>
+
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Capacidade cognitiva</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A IA <span class="bold">não possui princípios éticos e não é capaz de discernir entre certo e errado, verdadeiro ou falso;</span> sendo essencial uma análise crítica dos resultados obtidos e sua comparação com fontes confiáveis.</p>
+            </div>
+          </div>
+
+          <div class="sub-container">
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Falta de regulamentação</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A falta de regulamentação de tais recursos também é ponto sensível, inclusive levando a criação de solicitações de <span class="bold">pausas no desenvolvimento da IA</span> para o desenvolvimento de protocolos compartilhados que permitam que esta exista.</p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Proteção de dados</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A falta de regulamentação também culmina neste tópico, uma vez que <span class="bold">não há uma base legal para a coleta e armazenamento de dados pessoais utilizados para treinar a IA.</span> O que leva a um ponto não só de atenção, mas de alerta aos usuários que eventualmente possam acabar solicitando, por exemplo a confecção de documentos com dados pessoais.</p>
+            </div>
+          </div>
+
+          <div class="sub-container">
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Conteúdos discriminatórios e Fake News</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Há grande preocupação com as questões de discriminação e criação de conteúdo falsos. Ao mesmo tempo que a IA torna-se um mundo de possibilidades, utilizada de forma irresponsável <span class="bold">é capaz de gerar fake news, de grande prejuízo social,</span> ou conteúdos discriminatórios e ofensivos a diversas grupos sociais.</p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Acessibilidade</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Dentre as em discussão estão a disponibilidade do serviço para alguns países devido a regulamentações, censura e restrições da internet; além de questões de acesso e igualdade de disponibilidade, custos e velocidade da internet. <span class="bold">Neste contexto, é muito mais difícil que algumas nações consigam se beneficiar dos avanços alcançados por seu uso.</span></p>
+            </div>
+          </div>
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-lilas-claro.png">
+        </div>
+
+        <div class="main-container-2-mobile tablet-hide desktop-hide">
+      
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Integridade acadêmica</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">O uso de IA tem sido amplamente discutido na comunidade acadêmica, principalmente com relação à <span class="bold">riscos de plágios,</span> como em casos em que é utilizada para geração de trabalhos e respostas de avaliações. Para isso, diversas ferramentas para a detecção do uso da IA vêm sendo utilizadas pelas Instituições de Ensino, chegando ao <span class="bold">banimento de algumas plataformas ao redor do mundo.</span></p>
+            </div>
+
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Capacidade cognitiva</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A IA <span class="bold">não possui princípios éticos e não é capaz de discernir entre certo e errado, verdadeiro ou falso;</span> sendo essencial uma análise crítica dos resultados obtidos e sua comparação com fontes confiáveis.</p>
+            </div>
+     
+
+    
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Falta de regulamentação</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A falta de regulamentação de tais recursos também é ponto sensível, inclusive levando a criação de solicitações de <span class="bold">pausas no desenvolvimento da IA</span> para o desenvolvimento de protocolos compartilhados que permitam que esta exista.</p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Proteção de dados</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">A falta de regulamentação também culmina neste tópico, uma vez que <span class="bold">não há uma base legal para a coleta e armazenamento de dados pessoais utilizados para treinar a IA.</span> O que leva a um ponto não só de atenção, mas de alerta aos usuários que eventualmente possam acabar solicitando, por exemplo a confecção de documentos com dados pessoais.</p>
+            </div>
+       
+
+
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Conteúdos discriminatórios e Fake News</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Há grande preocupação com as questões de discriminação e criação de conteúdo falsos. Ao mesmo tempo que a IA torna-se um mundo de possibilidades, utilizada de forma irresponsável <span class="bold">é capaz de gerar fake news, de grande prejuízo social,</span> ou conteúdos discriminatórios e ofensivos a diversas grupos sociais.</p>
+            </div>
+            <div class="box" id="box-estudos-etica">
+              <button class="box-botao"><h5>Acessibilidade</h5><img src="assets/icones-diversos/seta-preta-baixo.svg"></button>
+              <p class="hide-box">Dentre as em discussão estão a disponibilidade do serviço para alguns países devido a regulamentações, censura e restrições da internet; além de questões de acesso e igualdade de disponibilidade, custos e velocidade da internet. <span class="bold">Neste contexto, é muito mais difícil que algumas nações consigam se beneficiar dos avanços alcançados por seu uso.</span></p>
+            </div>
+
+
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-lilas-claro.png">
+
+        </div>
+
+
+    </section>
+
+
+    <div id="banner-container">
+      <div class="banner banner-parte-6-parte-7">
+        <img src="assets/banner-parte-6-parte-7.jpg" alt="Banner">
+      </div>
+      <div id="triangle" class="triangle-parte-6-7"></div>
+    </div>
+
+    <!-- Parte 7 --> 
+    <section id="rotina-univesp">
+      <div class="parte-7-rotina">
+        <div class="main-container">
+          <div class="titulo-parte-7" id="titulo"><div class="vertical-divider"></div><h2>A IA em sua rotina Univesp</h2></div>
+          <p>O uso da IA pode contribuir em sua rotina na Univesp, seja nos estudos, seja para lidar com as atividades rotineiras. No entanto, ela deve atuar <span class="highlight-azul"><span class="bold">“com você”</span> e não <span class="bold">“por você”.</span></span></p>
+          <p>Uma opção interessante de uso de IA em sua rotina é explorar pontos específicos de uma norma ou orientação em que você tenha dúvidas. Você pode, por exemplo, baixá-las em pdf e inseri-las no Notebook LM para realizar perguntas sobre temas específicos.</p>
+          <p>Outras opções, são usar a IA como assistente na redação de seus requerimentos de prova. Neste caso, você pode usar a IA para conversar sobre uma questão e avaliar os pontos em que ficou com dúvida ou buscar nova fontes para aprofundar conceitos. Uma aplicação interessante é tentar explicar para a IA sua crítica sobre a questão e avaliar o quanto ela é pertinente ou bem explicada. Além de contar com a IA para discutir ideias, você pode usá-la para avaliar seu texto sob diversos critérios, como <span class="bold highlight-azul">clareza, objetividade, pertinência e correção conceitual.</span></p>
+          <img class="divisao-rede" src="assets/icones-diversos/divisao-rede.png">
+          <h5 class="exemplos-de-comandos">Exemplos de Comandos possíveis para a sua rotina na Univesp</h5>
+          <div class="triangulo-exemplos"></div>
+        </div>
+
+          <div class="main-container-2">
+            
+            <p class="comandos">Verifique em <span class="bold">[documento]</span> quais são as regras e procedimentos para <span class="bold">[tema]</span>.</p>
+            <p class="comandos">Reproduza os trechos específicos do assunto e os explique para que eu possa <span class="bold">[ação]</span> em <span class="bold">[contexto]</span>.</p>
+            <p class="comandos">A partir da análise do (a) <span class="bold">[documento]</span> elabore um checklist sobre <span class="bold">[tema]</span> para que eu possa me organizar para requisitar <span class="bold">[ação]</span> no (a) <span class="bold">[local].</span></p>
+            <p class="comandos">Eu respondi a uma questão sobre o <span class="bold">[tema]</span> em uma prova de <span class="bold">[disciplina]</span>. Depois de estudar <span class="bold">[material]</span> a respeito entendi que <span class="bold">[explicação da sua ideia].</span> Avalie minha interpretação para eu saber se ela está correta ou incorreta e destaque seus pontos fortes e fracos.</p>
+            <p class="comandos">Recentemente eu fiz uma prova da <span class="bold">[disciplina].</span> Uma das questões era baseada em <span class="bold">[material]</span> no qual se discutia o <span class="bold">[tema]</span>. O gabarito apontou que a <span class="bold">[alternativa]</span> era a correta para responder ao <span class="bold">[comando]</span>, mas eu selecionei <span class="bold">[alternativa selecionada]</span>, considerada errada. Eu discordo dessa avaliação porque <span class="bold">[motivação respaldada por argumentos e conceitos]</span>. Avalie meu ponto de vista reunindo fontes, conceitos e argumentos que ajudem a comprová-lo se estiver correto e refutá-lo se estiver errado.</p>
+           <img src="assets/icones-diversos/engrenagem-divisao-lilas.png" class="divisao-engrenagem">
+            <div class="sub-container-1">
+              <img id="icone-cabeca" src="assets/parte-7-rotina/icone-cabeca-5.png">
+              <h5 id="subtitulo">Vamos considerar alguns exemplos de uso na rotina da Univesp.</h5>
+            </div>
+            <p>Vamos supor que você tem dúvidas sobre produtos notáveis e gostaria de utilizar uma IA generativa para aprender um pouco mais. Um comando simples pode ser “Me explique como utilizar produtos notáveis”. A resposta da IA pode ser algo como:</p>
+          
+          <div class="box-resp-enem">
+            <div class="section">
+              <div><p class="azul-claro"><span class="comando">Comando:</span> “Me explique como utilizar produtos notáveis".</p></div>
+            </div>
+            <div class="section">
+              <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Resposta da IA:</p></div>
+              <p>Claro! Produtos notáveis são bastante úteis quando você precisa simplificar expressões algébricas. Aqui estão os principais produtos notáveis e como utilizá-los: <br> <br>
+                <span class="underline">1. Quadrado da soma de dois termos</span><br>
+￼￼￼ <br>
+<span class="underline">2. Quadrado da diferença de dois termos</span><br>
+￼￼￼ <br>
+<span class="underline">3. Produto da soma pela diferença de dois termos</span><br>
+￼￼￼ <br>
+<span class="underline">4. Cubo da soma de dois termos</span><br>
+￼￼￼ <br>
+<span class="underline">5. Cubo da diferença de dois termos</span><br>
+￼￼￼ <br> <br>
+Essas fórmulas ajudam a evitar longos cálculos e facilitam a resolução de equações e fatoração de polinômios. Vamos ver um exemplo prático com o quadrado da soma: <br> <br>
+<span class="bold">Exemplo:</span><br>
+Dado $$(x + 5)^2$$:<br>
+&nbsp &nbsp 1.	Use a fórmula $$(a + b)^2 = a^2 + 2ab + b^2$$ <br>
+&nbsp &nbsp 2.	Identifique $$a = x$$ e $$b = 5$$ <br>
+&nbsp &nbsp 3.	Calcule $$a^2 = x^2$$ <br>
+&nbsp &nbsp 4.	Calcule $$2ab = 2(x)(5)  = 10x$$ <br>
+&nbsp &nbsp 5.	Calcule $$b^2 = 5^2 = 25$$ <br>
+&nbsp &nbsp 6.	Junte os termos: $$x^2 + 10x + 25$$ <br>
+<br> Precisa de mais ajuda com algum exemplo específico ou outro tópico matemático? Estou aqui para ajudar!
+
+
+
+              </p>
+            </div>
+            <div class="section"><p class="azul-claro"><span class="bold">Comentários sobre o retorno da IA:</span> Note que a formatação de algumas equações está diferente, sendo necessário algum conhecimento para verificar se estão corretas (nesse caso estão). Além disso, ao copiar o texto da IA a expressão é desconfigurada e passa a ser representada pelo caractere ￼, indicando a dificuldade de transpor o texto.</p></div>
+          </div>
+          
+        <p>Podemos utilizar a IA para entender alguma questão, sempre lembrando que a resposta da IA <span class="bold">pode não ser adequada</span>. Se enviarmos o comando:</p>
+        
+        <div class="box-resp-enem-2">
+          <div class="section">
+            <div><p class="azul-claro"><span class="comando">Comando</span> <br><br> Assinale a alternativa que representa uma afirmação verdadeira sobre senso comum e ciência:<br>
+            <br>
+            a) O senso comum não apresenta um sistema metodológico.
+            <br>
+            b) A diferença entre ciência e senso comum se estabelece pela natureza dos objetos em questão.
+            <br>
+            c) O senso comum se baseia exclusivamente pela percepção do cotidiano.
+            <br>
+            d) A diferença entre senso comum e ciência está na forma, nos métodos e/ou instrumentos utilizados.
+            <br>
+            e) A ciência se baseia na objetividade e busca ir além do cotidiano.
+            </p>
+
+            </div>
+          </div>
+          <div class="section">
+            <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Resposta da IA:</p></div>
+            <p>A resposta indicará apenas a alternativa correta.
+            </p>
+          </div>
+        </div>
+
+        <p>Por outro lado, se enviarmos:</p>
+
+        <div class="box-resp-enem-2">
+          <div class="section">
+            <div><p class="azul-claro"><span class="comando">Comando</span> <br><br> Assinale <span class="bold">as alternativas</span> que representam uma afirmação verdadeira sobre senso comum e ciência:<br>
+            <br>
+            a) O senso comum não apresenta um sistema metodológico.
+            <br>
+            b) A diferença entre ciência e senso comum se estabelece pela natureza dos objetos em questão.
+            <br>
+            c) O senso comum se baseia exclusivamente pela percepção do cotidiano.
+            <br>
+            d) A diferença entre senso comum e ciência está na forma, nos métodos e/ou instrumentos utilizados.
+            <br>
+            e) A ciência se baseia na objetividade e busca ir além do cotidiano.
+            </p>
+
+            </div>
+       
+          </div>
+          <div class="section">
+            <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Resposta da IA:</p></div>
+            <p>A resposta apresentará <span class="bold">mais de uma alternativa correta.</span>
+            </p>
+          </div>
+        </div>
+
+        <p>Dessa forma é importante verificar criticamente as respostas fornecidas pela IA. Pode ser útil adicionar <span class="bold">"porque cada alternativa é correta ou incorreta”</span> para entender as associações feitas.</p>
+
+        <p>Podemos, ainda, solicitar referências para um determinado assunto, conforme exemplificado:</p>
+      
+        <div class="box-resp-enem-2">
+          <div class="section">
+            <div><p class="azul-claro"><span class="comando">Comando</span> <br><br>Forneça 10 referências sobre Scratch.
+            </p>
+            </div>
+ 
+          </div>
+          <div class="section">
+            <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Resposta da IA:</p></div>
+            <p>Após a resposta da IA é importante verificar se, de fato, as referências existem e se o conteúdo é adequado.</p>
+          </div>
+        </div>
+
+        <p>Também podemos utilizar como ponto de partida para escrita. Por exemplo:</p>
+
+        <div class="box-resp-enem-2">
+          <div class="section">
+            <div><p class="azul-claro"><span class="comando">Comando</span> <br><br>Forneça um ponto de partida para um texto sobre a importância da escrita.
+            </p>
+            </div>
+   
+          </div>
+          <div class="section">
+            <div><img src="assets/icones-diversos/engrenagem-lilas.png"><p class="bold">Resposta da IA:</p></div>
+            <p>A reposta pode gerada pode ser útil para utilizar como ponto de partida na escrita de um texto. Entretanto, é importante trabalhar o texto com autoria própria, enriquecendo-o com elementos e registros pessoais e incluindo referências se necessário.</p>
+          </div>
+        </div>
+
+        </div>
+        <div class="main-container-3">
+          <div class="sub-container-2 mobile-hide small-hide">
+            <p>Mas, sempre se lembre! <span class="bold">A IA gen não é livre de falhas.</span> Como qualquer tecnologia a nosso dispor, a qualidade do seu uso depende de uma postura crítica por parte do usuário. Na utilização da IA gen <span class="bold">o grande diferencial é você!</span></p>
+            <img class="fake-news-icone" src="assets/parte-5-estudos/fake-news.png">
+          </div>
+          <div class="sub-container-2-small-mobile desktop-hide tablet-hide">
+            <img class="fake-news-icone" src="assets/parte-5-estudos/fake-news.png">
+            <p>Mas, sempre se lembre! <span class="bold">A IA gen não é livre de falhas.</span> Como qualquer tecnologia a nosso dispor, a qualidade do seu uso depende de uma postura crítica por parte do usuário. Na utilização da IA gen, <span class="bold">o grande diferencial é você!</span></p>
+            
+          </div>
+          <img class="divisao-engrenagem" src="assets/icones-diversos/engrenagem-divisao-lilas-claro.png">
+        </div>
+      </div>
+
+
+      <div class="container-botoes" id="referencias">
+        <button id="botao-referencias">Referências</button>
+        <button id="botao-glossario">Glossário</button>
+      </div>
+
+      <div id="referencias-container" class="content hidden">
+        <p>ARAÚJO, D. ChatGPT: o uso de inteligência artificial em pesquisas acadêmicas. Fortaleza: Universidade de Fortaleza, 2023. Disponível em: <a href="https://unifor.br/web/bibliotecaunifor/chatgpt-o-uso-de-inteligencia-artificial-em-pesquisas-academicas">https://unifor.br/web/bibliotecaunifor/chatgpt-o-uso-de-inteligencia-artificial-em-pesquisas-academicas.</a> Acesso em 12 jul. 2024.</p>
+        <p>PAVLIK, G. O que é a IA generativa? Como funciona? Oracle. Disponível em:
+          <a href="https://www.oracle.com/br/artificial-intelligence/generative-ai/what-is-generative-ai/">https://www.oracle.com/br/artificial-intelligence/generative-ai/what-is-generative-ai/.</a> Acesso em 30 set. 2024.</p>
+          <p>MAZOUYER, A. Recomendação sobre a Ética da Inteligência Artificial. <span class="bold">Organização das Nações Unidas para a Educação, a Ciência e a Cultura.</span> Paris, 2022. Disponível em: <a href="https://unesdoc.unesco.org/ark:/48223/pf0000381137_por">https://unesdoc.unesco.org/ark:/48223/pf0000381137_por.</a> Acesso em 12 jul. 2024.</p>
+          <p>SABZALIEVA, E. e VALENTINI, A. ChatGPT e Inteligência Artificial na Educação Superior - Guia de início rápido. <span class="bold">Organização das Nações Unidas para a Educação, a Ciência e a Cultura.</span> Paris, 2023. Disponível em: <a href="https://unesdoc.unesco.org/ark:/48223/pf0000385146_por">https://unesdoc.unesco.org/ark:/48223/pf0000385146_por</a>. Acesso em 12 jul. 2024.</p>
+          <p>TELES, F. Chatbot com deep learning: boas práticas para o ChatGPT. Desk Manager, 2023. Disponível em: <a href="https://deskmanager.com.br/blog/como-usar-chat-gpt/">https://deskmanager.com.br/blog/como-usar-chat-gpt/</a>. Acesso em 12 jul. 2024.</p>
+          <p>Wolfram Alpha. <span class="bold">Wikipedia</span>. Disponível em: <a href="https://pt.wikipedia.org/wiki/WolframAlpha">https://pt.wikipedia.org/wiki/WolframAlpha</a>. Acesso em 31 out. 2024.</p>
+      </div>
+
+      <div id="glossario-container" class="content hidden">
+        <p><span class="bold">Acessibilidade:</span> relaciona-se com acesso para utilização, com segurança e autonomia, de espaços, mobiliários etc., em igualdade de condições entre todos, independentemente de suas características pessoais, físicas ou cognitivas.</p>
+        <p><span class="bold">Algoritmos:</span> sequência lógica de instruções destinadas a resolver determinada questão proposta e que fundamenta sua execução.</p>
+        <p><span class="bold">Aprendizagem de Máquina:</span> segundo o Google Cloud/Tópicos[1], “é um subconjunto da inteligência artificial que permite que um sistema aprenda e melhore de maneira autônoma usando redes neurais e deep learning, sem ter sido programado explicitamente para isso, ao ser alimentado com grandes quantidades de dados.”</p>
+        <p><span class="bold">Banco de Dados:</span> coleção estruturada de dados e informações que podem ser acessados, estudados e gerenciados.</p>
+        <p><span class="bold">Brainstorming:</span> técnica onde há um encontro colaborativo no qual os participantes geram ideias para a solução de um determinado problema.</p>
+        <p><span class="bold">Código:</span> é um conjunto de caracteres utilizados para compor uma mensagem. Por exemplo, as Línguas Portuguesa e Inglesa são constituídas por códigos (sistema de letras); a forma como tais códigos se organizam (codificação) permite a formação de palavras e, consequentemente, mensagens, que são transmitidas e entendidas apenas pelos que conhecem a língua.</p>
+        <p><span class="bold">Deep Learning:</span> segundo a IBM/Topics[2]: “é um subconjunto do aprendizado de máquina que usa redes neurais de várias camadas, chamadas de redes neurais profundas, para simular o complexo poder de tomada de decisão do cérebro humano.”</p>
+        <p><span class="bold">Decodificação:</span> é a tradução de código. Seguindo com o exemplo da Língua Portuguesa e Inglesa (definição de código), a tradução de um texto em inglês para um brasileiro que não conhece este idioma seria a decodificação para o português; permitindo, assim, que este compreenda a mensagem.</p>
+        <p><span class="bold">Ética:</span> segundo a definição do Dicionário Oxford Languages, “é conjunto de regras e preceitos de ordem valorativa e moral de um indivíduo, de um grupo social ou de uma sociedade.”</p>
+        <p><span class="bold">Fontes de dados:</span> local de origem da informação ou dado. Onde estes são armazenados (salvos).</p>
+        <p><span class="bold">Fake News:</span> termo em inglês para “notícia falsa”. Está relacionada a informações veiculadas que possuem conteúdo criado ou distinto da realidade e que geram desinformação.</p>
+        <p><span class="bold">Processamento de linguagem natural (PLN):</span> segundo a IMB/Topics[3], “é um subcampo da ciência da computação e da inteligência artificial (IA) que usa aprendizado de máquina para permitir que computadores entendam e se comuniquem com a linguagem humana.”</p>
+        <p><span class="bold">Modelo de linguagem:</span> segundo o site Microsoft/Learn[4], “são modelos avançados de aprendizado de máquina usados para tarefas de processamento de linguagem natural (PLN), como geração de texto e análise de sentimentos. Esses modelos representam a linguagem natural com base na probabilidade de palavras ou sequências de palavras ocorrerem em um determinado contexto”.</p>
+        <p><span class="bold">Redes Neurais:</span> segundo a IMB/Topics[5], “Uma rede neural é um programa de aprendizado de máquina, ou modelo, que toma decisões de uma forma semelhante ao cérebro humano, utilizando processos que imitam a maneira como os neurônios biológicos trabalham juntos para identificar fenômenos, avaliar opções e chegar a conclusões.”</p>
+        <p><span class="bold">Prompt da IA (comandos):</span> é o texto da pergunta que se deseja realizar para a IA.</p>
+        <p><span class="bold">Protocolos compartilhados:</span> segundo a Microsoft/Learn[6], “Server Message Block (SMB) é um protocolo de compartilhamento de arquivos em rede que permite que os aplicativos de um computador leiam e gravem em arquivos e solicitem serviços dos programas do servidor em uma rede de computadores."</p>
+        <p><span class="bold">Tecnologias inteligentes:</span> segundo Marinov (2019)[7], “são tecnologias nas quais suas principais características são a capacidade de aprender com sua própria experiencia, de se adaptar à situação de acordo com os dados obtidos, de gerenciar remotamente.”</p>
+        <p>-<br></p>
+        <div class="glossario-referencia">
+         <p>[1] <a href="https://cloud.google.com/learn/what-is-machine-learning?hl=pt-BR">https://cloud.google.com/learn/what-is-machine-learning?hl=pt-BR</a></p>
+         <p>[2] <a href="https://www.ibm.com/br-pt/topics/deep-learning">https://www.ibm.com/br-pt/topics/deep-learning</a></p>
+         <p>[3] <a href="https://www.ibm.com/br-pt/topics/natural-language-processing?mhsrc=ibmsearch_a&mhq=pln">https://www.ibm.com/br-pt/topics/natural-language-processing?mhsrc=ibmsearch_a&mhq=pln</a></p>
+         <p>[4] <a href="https://learn.microsoft.com/pt-br/azure/aks/concepts-ai-ml-language-models">https://learn.microsoft.com/pt-br/azure/aks/concepts-ai-ml-language-models</a></p>
+         <p>[5] <a href="https://www.ibm.com/br-pt/topics/neural-networks#:~:text=Uma%20rede%20neural%20%C3%A9%20um,op%C3%A7%C3%B5es%20e%20chegar%20a%20conclus%C3%B5es">https://www.ibm.com/br-pt/topics/neural-networks</a></p>
+         <p>[6] <a href="https://learn.microsoft.com/pt-br/windows-server/storage/file-server/file-server-smb-overview">https://learn.microsoft.com/windows-server/storage/file-server/file-server-smb-overview</a></p>
+         <p>[7] Marinov, R. New Intelligent Technologies—Interactivity and Information Issues. Advances in Journalism and Communication, v.7, n.3, 2019. Disponível em: <a href="https://www.scirp.org/journal/paperinformation?paperid=94854">https://www.scirp.org/journal/paperinformation?paperid=94854</a> Acesso em 19 dez. 2024.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer>
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+          <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+          <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+          <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+          <div>Compartilhe: <div class="sharing"></div></div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://forms.office.com/r/Lf9S0pjzMZ" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeE4DT6yuFY4wArPAPQ86GMbRLFwnlTLG-C-s5t2mFdRkR8bA/viewform?usp=pp_url&entry.1523910789=possibilidades-de-usos-academicos-para-a-ia" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Ciência, Tecnologia e Inovação (SCTI)</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Marcos Augusto Francisco Borges</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Coordenação</span>Wesley de Souza Lima</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Caio Guilherme Soares Fernandes, Luiz Felipe Guain Teixeira e Thais Caldas Paiva Moreira</p>
+          <p><span class="funcao">Ilustração e Layout</span>Pedro Henrique De Almeida Belem e Alex Fernandes</p>
+          <p><span class="funcao">Programação</span>Alex Fernandes</p>
+          <p><span class="funcao">Revisão</span>Caio Guilherme Soares Fernandes, Luiz Felipe Guain Teixeira e Thais Caldas Paiva Moreira</p>
+
+
+        </div>
+        <div class="modal-footer">
+          <p>Fevereiro/2025</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [
+        {
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

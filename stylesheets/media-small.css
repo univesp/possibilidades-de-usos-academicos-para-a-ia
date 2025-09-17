@@ -1,0 +1,457 @@
+@media (min-width: 576px) and (max-width: 767px) {
+  .small-hide {
+    display: none !important;
+  }
+
+  .banner {
+    width: auto;
+    height: 6vh; 
+    overflow: hidden; 
+  }
+
+  :root {
+    --gap-padrao: 2rem;
+    --padding-basico: 12vw 7vw 0% 7vw;
+  }
+
+  #icone-cabeca {
+    max-width: 3rem;
+    height: auto;
+  }
+
+  #titulo h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Menu ícones */
+  .menu-ilustrado-main-container {
+    padding-top: 10vw;
+  }
+
+.menu-ilustrado-container {
+  padding: 0 6vw 0% 6vw;
+ }
+
+ .menu-box {
+  width: 13rem;
+  height: 10rem;
+}
+
+.menu-box h5 {
+  font-size: 1rem;
+
+ }
+
+/* Parte 1 - Apresentação */
+.prompt-sintese {
+    max-width: 25rem;
+    align-self: center;
+}
+
+  /* Parte 1 - Apresentação */
+  .prompt-sintese {
+    max-width: 25rem;
+    align-self: center;
+}
+
+.parte-1-apresentacao .sub-container-3-small-mobile {
+  position: relative;
+  background-color: var(--lilas-aux); 
+  border-radius: 10px; 
+  padding: 1rem 1rem; 
+  display: flex; 
+  align-items: center; 
+  gap: 1rem;
+  align-self: center;
+}
+
+.parte-1-apresentacao .sub-container-3-small-mobile p {
+  flex: 1;
+  position: relative;
+}
+
+.parte-1-apresentacao .sub-container-3-small-mobile .pesquisa-icone {
+  max-height: 5rem;
+  width: auto;
+  object-fit: cover; 
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+/* Parte 2 - Alguns produtos que utilizam IA gen */
+
+.parte-2-produtos .logos-container {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.parte-2-produtos .logos-container img {
+  width: 80%;
+  height: auto;
+}
+
+.parte-2-produtos .logos-container img:nth-child(1) {
+  width: 90%;
+}
+
+.parte-2-produtos .logos-container img:nth-child(2) {
+  width: 70%;
+}
+
+
+.parte-2-produtos .ha-varias {
+  max-width: 100%;
+  padding: 1.8rem 1.8rem;
+}
+
+.parte-2-produtos .ha-varias p {
+  text-align: center;
+}
+
+.parte-2-produtos .sub-container-1 {
+  max-width: 90%;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+/* Parte 3 - IA em questões matemáticas */
+.parte-3-matematica .main-container {
+  padding: var(--padding-basico);
+  gap: var(--gap-padrao);
+}
+
+.ilustra-matematica-container {
+display: flex;
+padding: 0% 7vw 0% 7vw;
+justify-content: center;
+align-items: center;
+margin-top: var(--gap-padrao);
+border-radius: 1rem;
+}
+
+.ilustra-matematica-container img {
+  max-width: 70vw;
+  border-radius: 1rem;
+}
+
+.parte-3-matematica .sub-container-1 .sub-esquerda p:first-child {
+  padding-left: 7vw;
+}
+
+.parte-3-matematica .sub-container-1 {
+  padding-right: 7vw;
+ }
+ 
+ .parte-3-matematica .sub-container-1 .sub-esquerda {
+   max-width: 100%;
+ }
+
+.parte-3-matematica .sub-container-2 {
+  padding: calc(2 * var(--gap-padrao)) 7vw 0% 7vw;
+
+}
+
+.icone-cerebro {
+  margin: var(--gap-padrao) 0;
+}
+
+.icone-cerebro img:first-child {
+  width: 80%;
+}
+
+.parte-3-matematica .sub-container-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4vw 0% 4vw;
+  gap: calc(1.5 * var(--gap-padrao));
+}
+
+.matematica-gen-container img {
+  width: 50%;
+}
+
+.parte-3-matematica .main-container-2 {
+  padding: var(--padding-basico);
+}
+
+.parte-3-matematica .divisao-rede {
+  margin-top: 12vw;
+}
+
+.parte-3-matematica .container-imagens-1 .print,
+.parte-3-matematica .container-imagens-2 .print,
+.parte-3-matematica .container-imagens-3 .print {
+  width: clamp(33rem, 70vw, 70vw);
+}
+
+.parte-3-matematica .divisao-engrenagem:last-child {
+  margin: calc(1 * var(--gap-padrao)) 0 calc(2 * var(--gap-padrao)) 0
+}
+
+/* Parte 4 - Como utilizar a IA gen? Pensando em comandos. */
+.parte-4-como-utilizar .arte-1 {
+  margin-bottom: 1rem;
+  max-width: 70vw;
+}
+
+.parte-4-como-utilizar .main-container {
+  padding: var(--padding-basico);
+  }
+  
+  .parte-4-como-utilizar .com-a-ia-box {
+      max-width: 85%;
+  }
+  
+  .parte-4-como-utilizar .main-container-2 {
+      padding: 1% 7vw 0% 7vw;
+  }
+  
+  .parte-4-como-utilizar .box-enem {
+      margin-bottom: 0;
+  }
+  
+  .parte-4-como-utilizar .main-container-3 {
+      padding: var(--gap-padrao) 7vw 0% 7vw;
+  }
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+/* Parte 5 - Como posso usar a IA para meus estudos?  */
+
+  .parte-5-estudos .sub-container-1-small-mobile {
+    position: relative;
+    background-color: var(--laranja-escuro); 
+    border-radius: 10px; 
+    padding: 1rem 1rem; 
+    display: flex; 
+    align-items: center; 
+    gap: 1rem;
+    align-self: center;
+  }
+  
+  .parte-5-estudos .sub-container-1-small-mobile p {
+    flex: 1;
+    position: relative;
+  }
+  
+  .parte-5-estudos .sub-container-1-small-mobile .fake-news-icone {
+    max-height: 5rem;
+    width: auto;
+    object-fit: cover; 
+  }
+
+
+  .parte-5-estudos  .main-container .nesse-sentido {
+    align-self: center;
+    background-color: var(--azul-aux);
+    padding: 1.5rem 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    max-width: 90vw;
+    text-align: center;
+  }
+  
+
+  .parte-5-estudos  .main-container-2-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: 
+    url('../assets/parte-5-estudos/fundo_mobile.png') no-repeat center bottom / contain, 
+    linear-gradient(180deg, rgba(174,229,231,1) 0%, rgba(236,244,243,1) 100%);
+    gap: calc(2* (var(--gap-padrao)));
+    padding: 1rem 1rem calc(2* (var(--gap-padrao))) 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+
+
+  
+  .parte-5-estudos .main-container-2-mobile .sub-container-2-2:nth-of-type(1),
+  .parte-5-estudos .main-container-2-mobile .sub-container-2-2:nth-of-type(3) {
+    margin-top: 7rem;
+  }
+  
+  
+  /*  */
+  #box-estudos-etica {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  #box-estudos-etica p {
+    padding: 0 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    -webkit-box-shadow: 0px 4px 1px -2px rgba(46,46,46,0.19);
+    -moz-box-shadow: 0px 4px 1px -2px rgba(46,46,46,0.19);
+    box-shadow: 0px 4px 1px -2px rgba(46,46,46,0.19);
+    background-color: rgba(246, 241, 228, 0.25);
+  }
+  
+  #box-estudos-etica button {
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.8rem 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    outline: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    white-space: normal;
+  }
+  
+  #box-estudos-etica button img {
+    max-width: 1rem;
+  }
+  
+  .hide-box {
+    max-height: 0; 
+    opacity: 0; 
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden; 
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.2s ease;
+  }
+  
+  .appear-box {
+    opacity: 1; 
+    padding: 2rem 2rem !important;
+    max-height: 800px; 
+    overflow: hidden; 
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.2s ease; 
+  }
+  /*  */
+  
+  .parte-5-estudos .main-container-2-mobile .box button {
+    background-color: var(--laranja-escuro);
+  }
+  
+  
+  .parte-5-estudos .main-container-2-mobile .img-ciclo  {
+  max-width: clamp(20%, 70%, 20rem);
+  height: auto;
+  }
+
+
+
+  /* ----------------------------------------------------------------------------------- */
+
+
+
+/* Parte 6 - IA: Questão de Ética  */
+.parte-6-etica  .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12vw 7vw 3vw 7vw;
+  gap: var(--gap-padrao);
+}
+
+.parte-6-etica .main-container-2-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: 
+    url('../assets/teste.png') no-repeat center bottom / contain, 
+    linear-gradient(180deg, rgba(246,235,252,1) 0%, rgba(246,241,228,1) 100%); 
+  gap: calc(2* (var(--gap-padrao)));
+  padding: 4rem 1rem calc(2* (var(--gap-padrao))) 1rem;
+  box-shadow: inset 0px 4px 1px -2px rgba(46, 46, 46, 0.08);
+}
+
+.parte-6-etica .divisao-rede {
+  margin-top: 6vw;
+  margin-bottom: 9vw;
+}
+
+.parte-6-etica .main-container-2-mobile .img-ciclo  {
+  max-width: 20%;
+  height: auto;
+  }
+
+  .parte-6-etica .main-container-2-mobile .box button {
+    background-color: var(--lilas-aux);
+  }
+
+  .parte-6-etica .main-container-2-mobile #box-estudos-etica {
+    flex: 1;
+
+  }
+
+  /* ----------------------------------------------------------------------------------- */
+
+
+
+/* Parte 7 - A IA em sua rotina Univesp  */
+.parte-7-rotina  .main-container {
+  padding: var(--padding-basico);
+  gap: var(--gap-padrao);
+}
+
+.parte-7-rotina  .main-container .exemplos-de-comandos {
+  max-width: 80vw;
+}
+
+.parte-7-rotina .main-container-2 {
+  padding: 12vw 7vw 0% 7vw;
+  gap: calc(2* (var(--gap-padrao)));
+}
+
+.parte-7-rotina .sub-container-2-small-mobile {
+  position: relative;
+  background-color: var(--lilas-aux); 
+  border-radius: 10px; 
+  padding: 1rem 1rem; 
+  display: flex; 
+  align-items: center; 
+  gap: 1rem;
+  align-self: center;
+}
+
+.parte-7-rotina .sub-container-2-small-mobile p {
+  flex: 1;
+  position: relative;
+}
+
+.parte-7-rotina .sub-container-2-small-mobile .fake-news-icone {
+  max-height: 5rem;
+  width: auto;
+  object-fit: cover; 
+}
+
+/*#referencias-container,
+#glossario-container {
+  padding: 8vw 7vw 8vw 7vw;
+}*/
+
+/* glossário e referências */
+.content.visible {
+  padding: 8vw 7vw 8vw 7vw;
+}
+
+}
